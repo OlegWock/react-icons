@@ -69,7 +69,7 @@ async function writeIconModuleFiles(icon, { DIST, LIB, rootDir }) {
       );
       const comRes = iconRowTemplate(icon, name, iconData, "common");
       const comHeader =
-        "// THIS FILE IS AUTO GENERATED\nvar GenIcon = require('../lib').GenIcon\n";
+        "// THIS FILE IS AUTO GENERATED\nvar GenIcon = require('../lib').GenIcon;\n";
       await fs.writeFile(
         path.resolve(DIST, icon.id, `${name}.js`),
         comHeader + comRes,

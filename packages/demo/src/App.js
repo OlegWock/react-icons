@@ -25,7 +25,7 @@ class App extends Component {
               attr: { focusable: "false" },
             }}
           >
-            <MdAccessibility />
+            <MdAccessibility ref={this.ref} />
             <FaFolder
               color="red"
               title="folder icon"

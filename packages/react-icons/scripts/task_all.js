@@ -36,11 +36,11 @@ async function dirInit({ DIST, LIB, rootDir }) {
 
     await write(
       [icon.id, "index.js"],
-      "// THIS FILE IS AUTO GENERATED\nvar GenIcon = require('../lib').GenIcon\n"
+      "// THIS FILE IS AUTO GENERATED\nvar GenIcon = require('../lib').GenIcon\nvar React = require('react')\n"
     );
     await write(
       [icon.id, "index.esm.js"],
-      "// THIS FILE IS AUTO GENERATED\nimport { GenIcon } from '../lib';\n"
+      "// THIS FILE IS AUTO GENERATED\nimport { GenIcon } from '../lib';\nimport React from 'react';\n"
     );
     await write(
       [icon.id, "index.d.ts"],

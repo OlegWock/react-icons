@@ -3128,6 +3128,14 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@olegwock/react-icons@workspace:packages/_react-icons_all":
+  version: 0.0.0-use.local
+  resolution: "@olegwock/react-icons@workspace:packages/_react-icons_all"
+  peerDependencies:
+    react: "*"
+  languageName: unknown
+  linkType: soft
+
 "@react-icons/all-files@workspace:packages/_react-icons_all-files":
   version: 0.0.0-use.local
   resolution: "@react-icons/all-files@workspace:packages/_react-icons_all-files"
@@ -16510,13 +16518,14 @@ fsevents@~2.1.2:
   languageName: unknown
   linkType: soft
 
-"react-icons@^4.3.1, react-icons@workspace:packages/_react-icons_all":
-  version: 0.0.0-use.local
-  resolution: "react-icons@workspace:packages/_react-icons_all"
+"react-icons@npm:^4.3.1":
+  version: 4.4.0
+  resolution: "react-icons@npm:4.4.0"
   peerDependencies:
     react: "*"
-  languageName: unknown
-  linkType: soft
+  checksum: 5661dec1db305885e1dd2f5c95f9a7996d508a8a5a96e38ccf09455c3e7b1bd03c71df687c975dc4eb50167ba6261cbf0c3c1f570457ff7a0b1e1edcb8ac786c
+  languageName: node
+  linkType: hard
 
 "react-icons_builders@workspace:packages/react-icons":
   version: 0.0.0-use.local
