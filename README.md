@@ -9,18 +9,22 @@
 
 Include popular icons in your React projects easily with `react-icons`, which utilizes ES6 imports that allows you to include only the icons that your project is using.
 
+## Why fork?
+
+This version supports passing `ref` to icon. Which makes it possible to use components like Chakra tooltip or Radix tooltip (or any other component who need to assign `ref` to its children) with icons. This fork based on [PR](https://github.com/react-icons/react-icons/pull/367) to original package from [@jesstelford](https://github.com/jesstelford). So huge thanks to @jesstelford!
+
 ## Installation (for standard modern project)
 
 ```bash
-yarn add react-icons
+yarn add @olegwock/react-icons
 # or
-npm install react-icons --save
+npm install @olegwock/react-icons --save
 ```
 
 example usage
 
 ```jsx
-import { FaBeer } from 'react-icons/fa';
+import { FaBeer } from '@olegwock/react-icons/fa';
 
 class Question extends React.Component {
     render() {
@@ -34,6 +38,8 @@ class Question extends React.Component {
 For example, to use an icon from **Material Design**, your import would be: `import { ICON_NAME } from 'react-icons/md';`
 
 ## Installation (for meteorjs, gatsbyjs, etc)
+
+**Fixed version of this package isn't published to npm yet. If you interested in it -- please reach out to me in issues.**
 
 If your project grows in size, this option is available.
 This method has the trade-off that it takes a long time to install the package.
@@ -94,7 +100,7 @@ You can configure react-icons props using [React Context API](https://reactjs.or
 _Requires **React 16.3** or higher._
 
 ```jsx
-import { IconContext } from "react-icons";
+import { IconContext } from "@olegwock/react-icons";
 
 <IconContext.Provider value={{ color: "blue", className: "global-class-name" }}>
   <div>
